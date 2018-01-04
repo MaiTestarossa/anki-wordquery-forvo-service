@@ -20,10 +20,11 @@ class forvo(WebService):
 	
 		# add your forvo api here,more visit https://api.forvo.com/
         self.API = ''
-		
+		# custuom language
+		self.language = 'ja'
 		
         self.action = 'word-pronunciations'
-        url = 'https://apifree.forvo.com/key/' + self.API + '/format/json/action/' + self.action + '/word/' + self.word + '/language/ja'
+        url = 'https://apifree.forvo.com/key/' + self.API + '/format/json/action/' + self.action + '/word/' + self.word + '/language/' + self.language
         try:
             request = urllib2.urlopen(url)                                     # get the url, open the url
             get_json_file = json.load(request)
