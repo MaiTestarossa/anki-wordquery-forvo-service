@@ -5,7 +5,7 @@
 2. Paste your api key in forvo.py line22
 ```python
 	# add your forvo api here,more visit https://api.forvo.com/
-	self.API = ''
+	self.API = 'Paste API Here'
 ```
 3. Copy forvo.py to Anki2\addons\wquery\service
 4. Open Anki->Tools->WordQuery->Options window->choose forvo
